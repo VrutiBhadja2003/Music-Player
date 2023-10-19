@@ -1,0 +1,41 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(65, 65, 65);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  img {
+    height: 22px;
+    transform: translateY(5px);
+  }
+  .gap {
+    padding-right: 0.5rem;
+  }
+}
+
+.gap {
+  padding-right: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
